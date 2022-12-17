@@ -34,9 +34,9 @@ pesquisa(){
 
     # Verifica o arquivo de log e imprime a saída se verdadeiro
     # Caso contrario, deleta o arquivo com 0 bytes.
-    if [[ -d /tmp/pesquisa.log ]];
+    if [[ /tmp/pesquisa.log ]];
     then
-        printf "Encontramos algo para voce! Listando.. Arquivo de log: /tmp/pesquisa.log\n $listen_log"
+        printf "Encontramos algo para voce! Listando...\n Arquivo de log: /tmp/pesquisa.log\n $listen_log"
     else
         delete_log=$(/usr/bin/rm /tmp/pesquisa.log)
         printf "Parece que está tudo certo!\n"

@@ -1,14 +1,14 @@
-# Pesquisa em shellbash
+# Pesquisa em shellbash usando comando find
 
-Pesquisa arquivos no seu computador com mais de **30 dias** como imagens **iso** acima de **4 gigabytes**.<br/>
+<p>Verifica o diretório do usuário buscando por arquivos e dirétórios com + de 30 dias que possuem tamanho de 4096 Megabytes..</p>
 
-#### Permissão de execução
-`chmod +x search.sh`<br/>
-`sh search.sh`<br/>
-`./search.sh`<br/>
+#### 1. Permissão de execução
+`chmod +x pesquisa.sh`<br/>
+`sh pesquisa.sh`<br/>
+`./pesquisa.sh`<br/>
 
-#### Criar binário<br/>
+#### 2. Criar binário<br/>
 `cd pesquisa-shell/`<br/>
-`cp -p seaf.sh /usr/bin/seaf`<br/>
+`cp -p pesquisa.sh /usr/bin/pesquisa`<br/>
 
-> Execute o comando **seaf** na pasta que deseja pesquisar
+> Execute o comando **pesquisa** de qualquer diretório.

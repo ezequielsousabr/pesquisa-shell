@@ -27,7 +27,8 @@ pesquisa(){
         -mtime +30 \
         -user $(whoami) \
         -size +4096M \
-        -fprint /tmp/pesquisa.log)
+        -fprint /tmp/pesquisa.log) \
+        2> /dev/null
 
     listen_log=$(/usr/bin/cat /tmp/pesquisa.log)
     verifica=$(du -m /tmp/pesquisa.log)
